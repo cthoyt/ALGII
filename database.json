@@ -1,0 +1,60 @@
+{
+  "reactions": [
+    {
+      "inputs": [
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "3311",
+            "name": "calcium carbonate"
+          },
+          "state": "insoluble",
+          "stoichiometry": 1
+        },
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "15378",
+            "name": "hydron"
+          },
+          "state": "soluble",
+          "stoichiometry": 2
+        }
+      ],
+      "outputs": [
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "29108",
+            "name": "calcium(2+)"
+          },
+          "state": "soluble",
+          "stoichiometry": 1
+        },
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "15377",
+            "name": "water"
+          },
+          "state": "soluble",
+          "stoichiometry": 1
+        },
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "16526",
+            "name": "carbon dioxide"
+          },
+          "state": "gas",
+          "stoichiometry": 1
+        }
+      ],
+      "solvent": {
+        "prefix": "chebi",
+        "identifier": "15377",
+        "name": "water"
+      }
+    }
+  ]
+}

@@ -1,2 +1,3 @@
 # ALGII
-Materials for the ALGII practical course at RWTH Aachen
+
+Structured materials for Praktikum Allgemeine und Analytische Chemie II (ALGII) at RWTH Aachen University.
