@@ -1,6 +1,8 @@
 {
   "reactions": [
     {
+      "id": "1",
+      "label": "CaCO₃ + 2 H⁺ → Ca²⁺(aq) + H₂O + CO₂↑",
       "inputs": [
         {
           "reference": {
@@ -27,6 +29,67 @@
             "prefix": "chebi",
             "identifier": "29108",
             "name": "calcium(2+)"
+          },
+          "state": "soluble",
+          "stoichiometry": 1
+        },
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "15377",
+            "name": "water"
+          },
+          "state": "soluble",
+          "stoichiometry": 1
+        },
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "16526",
+            "name": "carbon dioxide"
+          },
+          "state": "gas",
+          "stoichiometry": 1
+        }
+      ],
+      "solvent": {
+        "prefix": "chebi",
+        "identifier": "15377",
+        "name": "water"
+      }
+    },
+    {
+      "id": "2",
+      "parents": [
+        "1"
+      ],
+      "label": "CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑",
+      "inputs": [
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "3311",
+            "name": "calcium carbonate"
+          },
+          "state": "insoluble",
+          "stoichiometry": 1
+        },
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "17883",
+            "name": "hydrogen chloride"
+          },
+          "state": "soluble",
+          "stoichiometry": 2
+        }
+      ],
+      "outputs": [
+        {
+          "reference": {
+            "prefix": "chebi",
+            "identifier": "3312",
+            "name": "calcium dichloride"
           },
           "state": "soluble",
           "stoichiometry": 1

@@ -12,7 +12,7 @@
 
 from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from pathlib import Path
 from curies import Reference
 import flask
@@ -31,6 +31,9 @@ class ReactionPart(BaseModel):
 
 
 class Reaction(BaseModel):
+    id: str = Field(..., pattern="^\\d+$")
+    label: str| None = None
+    parents: list[str] = Field(default_factory=list)
     inputs: list[ReactionPart]
     outputs: list[ReactionPart]
     solvent: Reference

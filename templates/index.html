@@ -3,7 +3,7 @@
 
 <ul>
     {% for reaction in database.reactions %}
-    <li>{{ reaction }}</li>
+    <li>rxn:{{ reaction.id }} {{ reaction.label }}</li>
     {% endfor %}
 </ul>
 
